@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Currency Exchange Rates</title>
+    <link rel="stylesheet" href="widget.css" />
+  </head>
+  <body>
+
+    <div id="widget" class="floatright">
+      <table>
+        <tr>
+          <th colspan=2> <img src="gb.png"> GBP Exchange Rates </th>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align:right;"> £1 GBP = </td>
+        </tr>
+        <tr>
+          <td><img src="eu.png"> EUR</td>
+          <td style="text-align:right;"> <?=$EUR;?> </td>
+        </tr>
+        <tr>
+          <td><img src="us.png"> USD</td>
+          <td style="text-align:right;"> <?=$USD;?> </td>
+        </tr>
+        <tr>
+          <td><img src="gb.png"> JPY</td>
+          <td style="text-align:right;"> <?=$JPY;?> </td>
+        </tr>
+        <tr>
+          <td><img src="ca.png"> CAD</td>
+          <td style="text-align:right;"> <?=$CAD;?> </td>
+        </tr>
+        <tr>
+          <td><img src="cn.png"> CHF</td>
+          <td style="text-align:right;"> <?=$CHF;?> </td>
+        </tr>
+        <tr>
+          <td><img src="au.png"> AUD</td>
+          <td style="text-align:right;"> <?=$AUD;?> </td>
+        </tr>
+        <tr>
+          <td width="70"> 
+            <button onclick="window.location.href='widget.html'"> &#128260; </button> 
+          </td>
+          <td style="text-align:right; color:#888888; font-size:10px;">
+          Rates: &nbsp; 
+        </tr>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
