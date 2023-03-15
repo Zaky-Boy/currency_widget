@@ -7,6 +7,7 @@ const CAD = document.getElementById('CAD');
 const CHF = document.getElementById('CHF');
 const AUD = document.getElementById('AUD');
 const RUB = document.getElementById('RUB');
+const dat = document.getElementById('dat');
 
 // Fetch exchange rates and update the DOM
 function calculate() {
@@ -22,6 +23,7 @@ function calculate() {
       CHF.innerText = data.rates['CHF'];
       AUD.innerText = data.rates['AUD'];
       RUB.innerText = data.rates['RUB'];
+      dat.innerText = 'Rates: ' + data['date'];
     });
 }
 
