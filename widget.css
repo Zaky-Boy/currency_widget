@@ -1,0 +1,15 @@
+	table th { background-color:lightblue; }
+	table, tr, td { border-collapse:collapse; }
+	table tr:nth-child(odd) { background-color:#fdf6e9; }
+      .floatright { 
+        position: fixed; 
+        float: right; 
+        top:50px; 
+        right:50px; 
+        border:3px solid lightblue; 
+        border-radius: 10px;
+        width: 180px; 
+        padding: 5px;
+      }
+      .divheader { background-color:lightblue; }
+      .content { position: relative; width: 400px; margin: 0 auto;}
