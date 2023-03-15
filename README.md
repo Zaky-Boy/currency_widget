@@ -9,5 +9,6 @@ I have created 2 projects with all necesery elements in html page (by the book),
         - widget.css
         - widget.js
 
-widget is located on the top right corner of the page in fixed position.        
+widget is located on the top right corner of the page in fixed position.     
+The page will refresh  every 10 min or by clicking the refresh buton.
 
