@@ -27,7 +27,7 @@ function calculate() {
     });
 }
 
-// Event listeners
+// Event listeners on click refresh widget
 refresh.addEventListener('click', () => { calculate(); });
 
 calculate();

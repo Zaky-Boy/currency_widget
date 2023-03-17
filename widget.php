@@ -2,9 +2,6 @@
   $page = $_SERVER['PHP_SELF'];
   $sec = "600"; // the page will refresh every 10min.
   // the easy way to refresh the widget is to refresh all page
-  // if we want to refresh only the widget 
-  // then we have to encapsulate pulling and fetching the json data
-  // in function and addEventListener (button click) or run timer to call this function...
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -49,14 +46,21 @@ if($json !== false) {
     try {
       $response = json_decode($json);
       if('success' === $response->result) {
-        $base_value = 1;
-        $EUR = round(($base_value * $response->conversion_rates->EUR), 2);
-        $USD = round(($base_value * $response->conversion_rates->USD), 2);
-        $JPY = round(($base_value * $response->conversion_rates->JPY), 2);
-        $CAD = round(($base_value * $response->conversion_rates->CAD), 2);
-        $CHF = round(($base_value * $response->conversion_rates->CHF), 2);
-        $AUD = round(($base_value * $response->conversion_rates->AUD), 2);
-        $RUB = round(($base_value * $response->conversion_rates->RUB), 2);
+        //$base_value = 1; // future update with ability to calc input value
+        //$EUR = round(($base_value * $response->conversion_rates->EUR), 2);
+        //$USD = round(($base_value * $response->conversion_rates->USD), 2);
+        //$JPY = round(($base_value * $response->conversion_rates->JPY), 2);
+        //$CAD = round(($base_value * $response->conversion_rates->CAD), 2);
+        //$CHF = round(($base_value * $response->conversion_rates->CHF), 2);
+        //$AUD = round(($base_value * $response->conversion_rates->AUD), 2);
+        //$RUB = round(($base_value * $response->conversion_rates->RUB), 2);
+        $EUR = round(($response->conversion_rates->EUR), 2);
+        $USD = round(($response->conversion_rates->USD), 2);
+        $JPY = round(($response->conversion_rates->JPY), 2);
+        $CAD = round(($response->conversion_rates->CAD), 2);
+        $CHF = round(($response->conversion_rates->CHF), 2);
+        $AUD = round(($response->conversion_rates->AUD), 2);
+        $RUB = round(($response->conversion_rates->RUB), 2);
       }
     }
     catch(Exception $e) {
